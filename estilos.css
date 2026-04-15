@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+header {
+    grid-column: span 2;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+aside {
+    background: #f4f4f4;
+    padding: 10px;
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+#carrito {
+    grid-column: span 2;
+    background: #222;
+    color: white;
+    padding: 10px;
+}

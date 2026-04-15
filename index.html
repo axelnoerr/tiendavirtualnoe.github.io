@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>UrbanStyle</h1>
+        <input type="text" id="buscador" placeholder="Buscar ropa...">
+    </header>
+    <section id="carrito">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+    <p id="total"></p>
+
+    <button onclick="enviarWhatsApp()">Enviar pedido</button>
+</section>
+
+    <aside>
+        <h2>Filtros</h2>
+
+        <label>Categoría:</label>
+        <select id="categoria">
+            <option value="todos">Todos</option>
+            <option value="playera">Playeras</option>
+            <option value="pantalon">Pantalones</option>
+        </select>
+
+        <label>Precio máximo:</label>
+        <input type="range" id="precio" min="0" max="2000" step="100">
+        <span id="valorPrecio"></span>
+    </aside>
+
+    <main id="productos">
+        <!-- Aquí se insertan los productos dinámicamente -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
